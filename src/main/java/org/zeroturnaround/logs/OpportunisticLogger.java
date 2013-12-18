@@ -26,7 +26,7 @@ public class OpportunisticLogger extends MarkerIgnoringBase {
 
   public OpportunisticLogger(Logger delegate, Level triggerLevel) {
     if (delegate == null) {
-      throw new IllegalArgumentException("Delegate logget shouldn't be null");
+      throw new IllegalArgumentException("Delegate logger shouldn't be null");
     }
     this.delegate = delegate;
     this.triggerLevel = triggerLevel;
